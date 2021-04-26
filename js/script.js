@@ -120,10 +120,23 @@ $(document).ready(function(){
     
       $("#delivery").click(function(){
         $("#stayLocation").show()
-        $("#wouldYou").hide()
-        $("#delly").append(`Your grand total, inclusive of delivery fee is <strong>${sum + 200}</strong>`)
-       
+        $("#wouldYou").hide()    
     });
+
+    $("#withLoc").click(function(){
+        var location = $("#stay").val()  
+        if(location===""){
+            alert("Enter delivery location")
+        }else{
+            $("#withLoc").hide()
+            $("#stay-text").hide()
+            $("#stay").hide()
+            $("#delly").append(`Your grand total, inclusive of delivery fee is <strong>${sum + 200}</strong> 
+                Your order will be delivered to 
+                <strong>${location}</strong>`)
+        }
+           
+    })
 
 
 
@@ -131,8 +144,7 @@ $(document).ready(function(){
         $("#wouldYou").hide()
     });
 
-    $("#confirm").click(function(){
-         var location = $("#stay").val()         
+    $("#confirm").click(function(){       
         $("#final").hide()
         $("#stayLocation").hide()
         $("#message").show()
