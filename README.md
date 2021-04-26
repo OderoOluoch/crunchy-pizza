@@ -1,4 +1,4 @@
-#GHANA AKAN-NAMES
+#CRUNCHY-PIZZA
 
 ## Author
 Odero Oluoch
