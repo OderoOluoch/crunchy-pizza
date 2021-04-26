@@ -25,3 +25,13 @@ function genOderId(){
 var reset = function(){
     location.reload();
 } 
+
+Pizza.prototype.getSize = function(size){
+    if(size==="600"){
+        return `Small - ${this.size}`
+    }else if(size==="900"){
+        return `Medium - ${this.size}`
+    }else if(size==="1200"){
+        return `Large - ${this.size}`
+    }   
+}
