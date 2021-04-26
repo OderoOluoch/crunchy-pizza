@@ -118,6 +118,8 @@ $(document).ready(function(){
 
 
 
+    $("#nodeli").click(function(){
 
+    });
 
 })
