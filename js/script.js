@@ -121,9 +121,13 @@ $(document).ready(function(){
       $("#delivery").click(function(){
         $("#stayLocation").show()
         $("#wouldYou").hide()
-        var total=  $("#total").val()
-        console.log(total)
-        console.log(`Your Grand Total is ${parseInt(total) + 200}`)
+        var tot = document.getElementById("total").value
+        console.log(tot)
+        // var total=  parseInt($("#total").val());  
+        // console.log(total)
+
+        $("#delly").append(`Your grand total, inclusive of delivery fee is ${total + 200}`)
+       
     });
 
 
