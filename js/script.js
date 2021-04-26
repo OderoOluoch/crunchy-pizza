@@ -59,3 +59,15 @@ Pizza.prototype.getToppings = function(topping){
 Pizza.prototype.getTotal = function(){
     return this.total
 }
+
+
+
+var deliveryOrder = new PizzaOrder()
+var sum =0;
+
+function getGrandTotal(){
+    for(let i =0; i < deliveryOrder.pizza.length; i++){
+        sum += deliveryOrder.pizza[i].total
+    }
+    return sum;
+} 
