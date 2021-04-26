@@ -120,7 +120,7 @@ $(document).ready(function(){
     
       $("#delivery").click(function(){
         $("#stayLocation").show()
-        alert("I have been licked ")
+        $("#wouldYou").hide()
         var total=  $("#total").val()
         console.log(total)
         console.log(`Your Grand Total is ${parseInt(total) + 200}`)
