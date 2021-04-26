@@ -7,3 +7,14 @@ function Pizza(size,crust,topping){
 function PizzaOrder(){
     this.pizza = [];
 }
+
+function resetFields() {
+    var inputtedSizePrice = $("#pizzaSize").val("");
+    var inputtedCrustPrice = $("#pizzacrust").val("");
+    var inputtedToppingPrice = $("#pizzaToppings").val("");
+}
+
+function genRandId(){
+    var rand = Math.floor(Math.random() * 77)
+    return `#PIZZ${rand}-D`
+}
