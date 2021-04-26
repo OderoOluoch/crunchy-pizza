@@ -133,7 +133,8 @@ $(document).ready(function(){
     });
 
     $("#confirm").click(function(){
-        
+        $("#final").hide()
+        $("#message").show()
     })
 
 })
