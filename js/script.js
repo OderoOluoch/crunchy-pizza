@@ -107,6 +107,15 @@ $(document).ready(function(){
         $("#track").append(`<strong>${genOderId()}</strong>`)
         $("#total").append(`<strong>${getGrandTotal()}</strong>`)
       });
+    
+      $("#delivery").click(function(){
+        $("#stayLocation").show()
+        alert("I have been licked ")
+        var total=  $("#total").val()
+        console.log(total)
+        console.log(`Your Grand Total is ${parseInt(total) + 200}`)
+    });
+
 
 
 
