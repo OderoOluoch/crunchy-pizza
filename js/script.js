@@ -55,3 +55,7 @@ Pizza.prototype.getToppings = function(topping){
         return `Gorgonzola - ${this.topping}`
     } 
 }
+
+Pizza.prototype.getTotal = function(){
+    return this.total
+}
