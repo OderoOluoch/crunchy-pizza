@@ -35,3 +35,13 @@ Pizza.prototype.getSize = function(size){
         return `Large - ${this.size}`
     }   
 }
+
+Pizza.prototype.getCrust = function(crust){
+    if(crust==="150"){
+        return `Cripsy - ${this.crust}`
+    }else if(crust==="175"){
+        return `Stuffed - ${this.crust}`
+    }else if(crust==="200"){
+        return `Gluten Free - ${this.crust}`
+    } 
+}
