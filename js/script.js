@@ -4,3 +4,6 @@ function Pizza(size,crust,topping){
     this.topping = topping;
     this.total = (parseInt(this.size) + parseInt(this.crust) + parseInt(this.topping) )
 }
+function PizzaOrder(){
+    this.pizza = [];
+}
