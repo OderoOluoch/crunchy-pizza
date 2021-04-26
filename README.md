@@ -4,7 +4,7 @@
 Odero Oluoch
 
 ### Project Description
-This is a website that is based on the Ghanian Akans naming system.The web interface asks the user to input his or her birthday, select the gender then proceeds to submit the data to get the would have been Akhan names.
+This is a web UI for a Pizza Shop, where my business seeks to expand its customer base by impeneting deliveries.
 
 
 ### Prerequisities
@@ -15,7 +15,7 @@ You can install it with the following command in your terminal.
 ### Setup
 To access this project on your local files, you can clone it using these steps
 1. Open your terminal
-2. Use this command to clone `$ git clone https://github.com/OderoOluoch/akan.git`
+2. Use this command to clone `$ git clone https://github.com/OderoOluoch/crunchy-pizza.git`
 3. This will clone the repositoty into your local folder
  __Enjoy :)__
 
@@ -25,35 +25,40 @@ To access this project on your local files, you can clone it using these steps
 3. Git
 4. JAVASCRIPT
 5. BOOTSRAP
+6. jQuery
 
 ### BDD
 | The web, on opening, displays the contents, loads the forms and images |
 
 | The web displays styled items, neatly arranged. |
 
-| The form on the web allows the user to click in the calendar to select date with the following inputs|
+| The form on the web allows the user to click on each input and select values from the drop down|
 
         | Inputs | Description |
         |:---        |          ---: |
 
-        | Year   | The year  ``eg 2021``  |
+        | Size   | Range from small, medium and large  ``eg Large``  |
 
-        | Month  | The month of the year ``eg 12``  |
+        | Crust  | Range from cripsy, stuffed and gluton free ``eg cripsy``  |
 
-        | Date   | The date of the month ``eg 15`` |
+        | Toppings   | Range from paperonni, mushrooms and Gogonzalla ``eg Mushrooms`` |
 
-The site display error on the follwing events
-        | Inputs              | Description      |
+The site then allows a iser to make multiple selections.
+
+The site allows users to view all the details of theor selection and click a button to move to the next step.
+
+        | Inputs              | Description      | error when no selection is made ``ensure all entries are filled correctly``  |
 
         |:---            ---: |:---          ---:|
 
-        | Year month or date  | Empty submission | ``ensure all entries are filled correctly``  |
+        | Pick on delivery  | Adds an extra cost | 
         
-The site allows the user to clear inputs by clicking on the clear button
+The site allows users to cancel order, make orders without delivery and also with delivery. 
+The site allows users to clear and start a fresh.
     
 
 ### Live Site
-View [Live] (https://oderooluoch.github.io/akan/)
+View [Live] (https://oderooluoch.github.io/crunchy-pizza/)
 
 ### Licence
 This project is under the  [MIT](LICENSE) licence.
