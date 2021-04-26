@@ -45,3 +45,13 @@ Pizza.prototype.getCrust = function(crust){
         return `Gluten Free - ${this.crust}`
     } 
 }
+
+Pizza.prototype.getToppings = function(topping){
+    if(topping==="225"){
+        return `Pepperoni - ${this.topping}`
+    }else if(topping==="245"){
+        return `Mushrooms - ${this.topping}`
+    }else if(topping==="265"){
+        return `Gorgonzola - ${this.topping}`
+    } 
+}
