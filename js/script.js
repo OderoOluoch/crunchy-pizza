@@ -129,7 +129,11 @@ $(document).ready(function(){
 
 
     $("#nodeli").click(function(){
-
+        $("#wouldYou").hide()
     });
+
+    $("#confirm").click(function(){
+        
+    })
 
 })
