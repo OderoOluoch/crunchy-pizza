@@ -77,4 +77,38 @@ $(document).ready(function(){
     $("#alsoToHide").hide();
     $("#stayLocation").hide()
     $("#message").hide()
+    $("form#order").submit(function(event) {
+        event.preventDefault();
+        var inputtedSizePrice = $("#pizzaSize").val();
+        var inputtedCrustPrice = $("#pizzacrust").val();
+        var inputtedToppingPrice = $("#pizzaToppings").val();
+        var pickedPizza = new Pizza(inputtedSizePrice,inputtedCrustPrice,inputtedToppingPrice)
+        var placedOrder = new PizzaOrder()
+        placedOrder.pizza.push(pickedPizza)
+        deliveryOrder.pizza.push(pickedPizza)
+        resetFields();
+        $("#toHide").show();
+        placedOrder.pizza.forEach(function(pickedPizza){
+        $("#PizzaDisplay").append(`<tr>
+                <th scope="row">${genRandId()}</th>
+                <td>${pickedPizza.getSize(pickedPizza.size)}</td>
+                <td>${pickedPizza.getCrust(pickedPizza.crust)}</td>
+                <td>${pickedPizza.getToppings(pickedPizza.topping)}</td>
+                <td>${pickedPizza.getTotal()}</td>
+          </tr>`);
+        }) 
+    });
+
+    $( "#target" ).click(function() {
+        $("#alsoToHide").show()
+        $("#message").hide()
+        $("#target").hide()
+        $("#stayLocation").hide()
+        $("#track").append(`<strong>${genOderId()}</strong>`)
+        $("#total").append(`<strong>${getGrandTotal()}</strong>`)
+      });
+
+
+
+
 })
