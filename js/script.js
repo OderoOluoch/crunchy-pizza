@@ -87,8 +87,8 @@ $(document).ready(function(){
         var inputtedCrustPrice = $("#pizzacrust").val();
         var inputtedToppingPrice = $("#pizzaToppings").val();
         if(inputtedSizePrice ==="" || inputtedCrustPrice ==="" || inputtedToppingPrice ===""){
-            alert("Please make a pick from the available options")
             reset()
+            alert("Please make a pick from the available options")
         }else{
             var pickedPizza = new Pizza(inputtedSizePrice,inputtedCrustPrice,inputtedToppingPrice)
             var placedOrder = new PizzaOrder()
