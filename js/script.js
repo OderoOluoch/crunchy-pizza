@@ -18,3 +18,7 @@ function genRandId(){
     var rand = Math.floor(Math.random() * 77)
     return `#PIZZ${rand}-D`
 }
+function genOderId(){
+    var rand = Math.floor(Math.random() * 88)
+    return `#PZODR${rand}-D`
+}
