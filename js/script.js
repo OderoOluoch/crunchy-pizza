@@ -121,7 +121,7 @@ $(document).ready(function(){
       $("#delivery").click(function(){
         $("#stayLocation").show()
         $("#wouldYou").hide()
-        $("#delly").append(`Your grand total, inclusive of delivery fee is ${sum + 200}`)
+        $("#delly").append(`Your grand total, inclusive of delivery fee is <strong>${sum + 200}</strong>`)
        
     });
 
@@ -132,8 +132,11 @@ $(document).ready(function(){
     });
 
     $("#confirm").click(function(){
+         var location = $("#stay").val()         
         $("#final").hide()
+        $("#stayLocation").hide()
         $("#message").show()
     })
+
 
 })
