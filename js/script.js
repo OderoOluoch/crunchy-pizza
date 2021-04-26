@@ -71,3 +71,10 @@ function getGrandTotal(){
     }
     return sum;
 } 
+
+$(document).ready(function(){
+    $("#toHide").hide();
+    $("#alsoToHide").hide();
+    $("#stayLocation").hide()
+    $("#message").hide()
+})
