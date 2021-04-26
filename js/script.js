@@ -1,3 +1,4 @@
+//BUsiness Logic.
 function Pizza(size,crust,topping){
     this.size = size;
     this.crust = crust;
@@ -72,6 +73,9 @@ function getGrandTotal(){
     return sum;
 } 
 
+
+//User Interface Logic
+
 $(document).ready(function(){
     $("#toHide").hide();
     $("#alsoToHide").hide();
@@ -82,11 +86,16 @@ $(document).ready(function(){
         var inputtedSizePrice = $("#pizzaSize").val();
         var inputtedCrustPrice = $("#pizzacrust").val();
         var inputtedToppingPrice = $("#pizzaToppings").val();
-        var pickedPizza = new Pizza(inputtedSizePrice,inputtedCrustPrice,inputtedToppingPrice)
-        var placedOrder = new PizzaOrder()
-        placedOrder.pizza.push(pickedPizza)
-        deliveryOrder.pizza.push(pickedPizza)
-        resetFields();
+        if(inputtedSizePrice ==="" || inputtedCrustPrice ==="" || inputtedToppingPrice ===""){
+            alert("Please make a pick from the available options")
+        }else{
+            var pickedPizza = new Pizza(inputtedSizePrice,inputtedCrustPrice,inputtedToppingPrice)
+            var placedOrder = new PizzaOrder()
+            placedOrder.pizza.push(pickedPizza)
+            deliveryOrder.pizza.push(pickedPizza)
+            resetFields();
+        }
+      
         $("#toHide").show();
         placedOrder.pizza.forEach(function(pickedPizza){
         $("#PizzaDisplay").append(`<tr>
