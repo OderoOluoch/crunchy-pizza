@@ -22,3 +22,6 @@ function genOderId(){
     var rand = Math.floor(Math.random() * 88)
     return `#PZODR${rand}-D`
 }
+var reset = function(){
+    location.reload();
+} 
