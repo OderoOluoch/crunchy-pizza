@@ -2,7 +2,9 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #ECF6D3;
+}
+.container{
+  background-color: #C17507;
 }
 .select{
     background-color: #CDCECF;
